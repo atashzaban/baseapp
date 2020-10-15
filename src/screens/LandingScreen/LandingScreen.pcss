@@ -17,7 +17,7 @@
 
   h1 {
     align-items: center;
-    color: var(--primary-text-color);
+    color: var(--secondary-text-color);
     display: flex;
     font-size: 34px;
     font-style: normal;
@@ -34,7 +34,7 @@
 
   h2 {
     align-items: center;
-    color: var(--primary-text-color);
+    color: var(--secondary-text-color);
     display: flex;
     font-size: 16px;
     font-style: normal;
@@ -111,8 +111,9 @@
     &__wrap {
       flex-direction: row;
       justify-content: space-between;
-      max-width: 1180px;
-      padding: 0 20px;
+      max-width: 100%;
+	  width: 100%;
+      padding: 0 30px;
 
       &__right {
         align-items: center;
@@ -122,7 +123,7 @@
 
         .landing-button {
           height: 34px;
-          width: 170px;
+          width: 100px;
 
           &--simple {
             background: var(--cta-layer-color);			
@@ -152,8 +153,8 @@
     height: 100%;
     justify-content: center;
     margin-top: 64px;
-	min-height: 860px;
     width: 100%;
+	min-height: 870px;
 
     &__wrap {
       align-items: center;
@@ -231,13 +232,12 @@
     background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
-	diplay: none;
+	display:none;
 
     &__wrap {
       flex-direction: row;
       justify-content: flex-start;
       max-width: 1316px;
-	  display: none;
 
       &__item {
         align-items: flex-start;
@@ -301,7 +301,7 @@
           border-radius: 4px;
           display: flex;
           flex-direction: column;
-          height: 298px;
+          height: 375px;
           justify-content: flex-start;
           margin: 13px 10px;
           padding: 50px 38px;
@@ -391,7 +391,7 @@
   &__start-trading {
     background: var(--landing-background-color);
 	display: none;
-
+	
     &__wrap {
       margin: 70px 0 103px 0;
 
@@ -553,7 +553,7 @@
 
           &--simple {
             margin-right: 10%;
-            width: 60px;
+            width: 90px;
           }
         }
       }
@@ -577,7 +577,7 @@
     }
 
     &__features__content__row__item {
-      height: 380px;
+      height: 460px;
     }
 
     &__trade-on-the-go__wrap__content {
