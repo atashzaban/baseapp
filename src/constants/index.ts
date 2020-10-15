@@ -28,7 +28,7 @@ export const PASSWORD_ENTROPY_STEP = 6;
 export const colors = {
     light: {
         chart: {
-            primary: '#fff',
+            primary: 'var(--rgb-body-background-color)',
             up: '#54B489',
             down: '#E85E59',
         },
