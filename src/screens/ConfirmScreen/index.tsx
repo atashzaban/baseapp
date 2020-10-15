@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { compose } from 'redux';
 import { CloseIcon } from '../../assets/images/CloseIcon';
-import { LogoIcon } from '../../assets/images/LogoIcon';
+import { LogoIcon } from '../../assets/images/Logo';
 import { Phone } from '../../containers';
 import { Documents } from '../../containers/Confirm/Documents';
 import { Identity } from '../../containers/Confirm/Identity';
@@ -93,13 +93,13 @@ class ConfirmComponent extends React.Component<Props, ConfirmState> {
         const cx = classnames('pg-confirm__progress-items', {
             'pg-confirm__progress-first': currentProfileLevel === 1,
             'pg-confirm__progress-second': currentProfileLevel === 2 && !isProfileVerified,
-            'pg-confirm__progress-third': currentProfileLevel === 2 && isProfileVerified,
+            'pg-confirm__progress-third': currentProfileLevel === 3 && isProfileVerified,
         });
-
+/*
         if (currentProfileLevel === 3) {
             this.handleRedirectToProfile();
         }
-
+*/
         return (
             <div className="pg-wrapper">
                 <div className="pg-logo">
@@ -151,16 +151,16 @@ class ConfirmComponent extends React.Component<Props, ConfirmState> {
         }
     };
 
-    private handleRedirectToProfile = () => {
+/*    private handleRedirectToProfile = () => {
         this.props.history.push('/profile');
     };
-
+*/
     private handleCheckPendingLabel = (labels: Label[]) => {
         const isProfileSubmitted = labels.length && labels.find(l => l.key === 'profile' && l.value === 'submitted' && l.scope === 'private');
         const isDocumentPending = labels.length && labels.find(l => l.key === 'document' && l.value === 'pending' && l.scope === 'private');
 
         if (isProfileSubmitted || isDocumentPending) {
-            this.handleRedirectToProfile();
+//            this.handleRedirectToProfile();
         }
     };
 }
