@@ -125,10 +125,16 @@
           width: 170px;
 
           &--simple {
-            background: transparent;
+            background: var(--cta-layer-color);			
             height: 32px;
-            margin-right: 21px;
-            width: 76px;
+			width: 85px;
+			border: 2px solid var(--primary-cta-color);      
+			border-radius: 5px;
+			color: var(--primary-cta-color);
+			margin-right:30px;
+			font-size: 12px;
+			font-weight: 600;
+			padding: 10px 10px;
           }
         }
       }
@@ -231,6 +237,7 @@
       flex-direction: row;
       justify-content: flex-start;
       max-width: 1316px;
+	  display: none;
 
       &__item {
         align-items: flex-start;
