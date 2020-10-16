@@ -253,16 +253,16 @@ class Landing extends React.Component<Props> {
                     </div>
                     <div className="pg-landing-screen__footer__wrap__social">
                         <div className="pg-landing-screen__footer__wrap__social__row">
-                            <img src={TelegramIcon} alt="Telegram" />
-                            <img src={LinkedInIcon} alt="LinkedIn" />
-                            <img src={TwitterIcon} alt="Twitter" />
-                            <img src={YouTubeIcon} alt="YouTube" />
+                            <a href="#"><img src={TelegramIcon} alt="Telegram" /></a>
+							<a href="#"><img src={LinkedInIcon} alt="LinkedIn" /></a>
+                            <a href="#"><img src={TwitterIcon} alt="Twitter" /></a>
+                            <a href="#"><img src={YouTubeIcon} alt="YouTube" /></a>
                         </div>
                         <div className="pg-landing-screen__footer__wrap__social__row">
-                            <img src={RedditIcon} alt="Reddit" />
-                            <img src={FacebookIcon} alt="Facebook" />
-                            <img src={MediumIcon} alt="MediumIcon" />
-                            <img src={CoinMarketIcon} alt="CoinMarket" />
+							<a href="#"><img src={RedditIcon} alt="Reddit" /></a>
+                            <a href="#"><img src={FacebookIcon} alt="Facebook" /></a>
+                            <a href="#"><img src={MediumIcon} alt="MediumIcon" /></a>
+                            <a href="#"><img src={CoinGeckoIcon} alt="CoinGecko" /></a>
                         </div>
                     </div>
                 </div>
